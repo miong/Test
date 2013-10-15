@@ -24,6 +24,13 @@ public class Url_test {
 	}
 	
 	@Test
+	public void testWithoutProtocol() {
+		us.split("some.thing/a-path");
+		assertEquals("",us.getProtocol());
+		assertEquals("some.thing",us.getDomain());
+	}
+	
+	@Test
 	public void testDomain(){
 		us.split("ftp://a.large.site");
 		assertEquals("a.large.site",us.getDomain());
@@ -38,6 +45,12 @@ public class Url_test {
 	@Test
 	public void testPortWithoutPath(){
 		us.split("http://a.site.with:a-port/");
+		assertEquals("a-port",us.getPort());
+	}
+	
+	@Test
+	public void testPortWithoutPath2(){
+		us.split("http://a.site.with:a-port");
 		assertEquals("a-port",us.getPort());
 	}
 	
