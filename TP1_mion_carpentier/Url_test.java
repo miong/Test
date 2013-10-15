@@ -35,4 +35,10 @@ public class Url_test {
 		assertEquals("a-path",us.getPath());
 	}
 	
+	@Test
+	public void testPortWithoutPath(){
+		us.split("http://a.site.with:a-port/");
+		assertEquals("a-port",us.getPort());
+	}
+	
 }
