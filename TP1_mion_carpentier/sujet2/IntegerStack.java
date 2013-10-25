@@ -39,4 +39,7 @@ public class IntegerStack {
 		}
 		return tmp;
 	}
+	public int count(){
+		return size;
+	}
 }

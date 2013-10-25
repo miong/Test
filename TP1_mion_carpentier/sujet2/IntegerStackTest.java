@@ -32,7 +32,7 @@ public class IntegerStackTest {
 	}
 	@Test
 	public void testCount(){
-		for (int i=0;i<15;i++){
+		for (int i=1;i<15;i++){
 			s.push(i);
 			assertEquals(s.count(),i);
 		}
