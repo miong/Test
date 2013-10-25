@@ -34,4 +34,13 @@ public class StringSet {
 		}
 		tab=tmp;
 	}
+	
+	public boolean contains(String s){
+		for(int i=0;i<size;i++){
+			if(tab[i]==s){
+				return true;
+			}
+		}
+		return false;
+	}
 }
