@@ -1,5 +1,5 @@
 import static org.junit.Assert.*;
-import junit.frameworks.TestCase;
+import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +10,7 @@ public class LineTest extends TestCase {
 	//test constructeur
 	
 	@Test
-	public void LineConstructeurTest(){
+	public void testLineConstructeur(){
 		Line lNormale=new Line(1,1,2,2);
 		assertEquals(lNormale.x1,1);
 		assertEquals(lNormale.y1,1);
@@ -20,7 +20,7 @@ public class LineTest extends TestCase {
 	
 	//test intersection
 	@Test
-	public void LineIntersectionTest(){
+	public void testLineIntersection(){
 		Line lNormale=new Line(1,1,2,2);
 		Line lIntersecteNormale= new Line(0,0,4,3);
 		Line lIntersectePasNormale= new Line(-2,-1,-1,0);

@@ -16,4 +16,4 @@ compilation des tests d'un sujet :
 	make test
 
 lancement des tests automatique :
-	sh run_test.sh
+	sh run_test.sheturn 2*((xmax-xmin)+(ymax-ymin));

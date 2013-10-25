@@ -24,23 +24,22 @@ public class StringSetTest extends TestCase{
 			s=null;
 	}
 	
-	//test Add
 	@Test
-	public void addTest(){
+	public void testAdd(){
 		assertEquals(2,s.getSize());
 		assertEquals("bonjour",s.getTab()[0]);
 	}
 	
 	//test contains
 	@Test
-	public void containsTest(){		
+	public void testContains(){		
 		assertEquals(true,s.contains("bonjour"));
 		assertEquals(false,s.contains("bonsoir"));		
 	}
 	
 	//test Remove
 	@Test
-	public void removeTest(){
+	public void testRemove(){
 		s.remove("bonjour");
 		s.remove("bonsoir");
 		assertEquals(false,s.contains("bonjour"));
@@ -49,13 +48,13 @@ public class StringSetTest extends TestCase{
 	
 	//test Count
 	@Test
-	public void CountTest(){
+	public void testCount(){
 		assertEquals(2,s.count());
 	}
 	
 	//Test union
 	@Test
-	public void unionTest(){
+	public void testUnion(){
 		s.union(s2);
 		assertEquals(true,s.contains("bonsoir"));
 		assertEquals(true,s.contains("ciao"));
@@ -64,7 +63,7 @@ public class StringSetTest extends TestCase{
 	
 	//test intersection
 	@Test
-	public void intersectionTest(){
+	public void testIntersection(){
 		s.intersection(s2);
 		assertEquals(true,s.contains("bonjour"));
 		assertEquals(false,s.contains("hello"));
@@ -74,7 +73,7 @@ public class StringSetTest extends TestCase{
 	
 	//test clearing
 	@Test
-	public void clearTest(){
+	public void testClear(){
 		s.clear();
 		assertEquals(0,s.count());
 		assertEquals(false,s.contains("bonjour"));
@@ -83,7 +82,7 @@ public class StringSetTest extends TestCase{
 	
 	//test enumerating
 	@Test
-	public void enumerate(){
+	public void testEnumerate(){
 		String rep = s.enumerate();
 		assertEquals("bonjour hello",rep);
 	}

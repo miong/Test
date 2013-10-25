@@ -29,7 +29,7 @@ public class RectanglesTest extends TestCase{
 	
 	@Test
 	//test constructeur
-	public void RectangleTest(){
+	public void testRectangle(){
 		
 		assertEquals(rValide.xmin,0);
 		assertEquals(rValide.xmax,4);
@@ -46,7 +46,7 @@ public class RectanglesTest extends TestCase{
 	
 	//test aire rectangle
 	@Test
-	public void AirTest(){
+	public void testAir(){
 		assertEquals(20,rValide.aire());
 		assertEquals(20,rInvalide.aire());
 		assertEquals(0,rNull.aire());
@@ -54,7 +54,7 @@ public class RectanglesTest extends TestCase{
 	
 	//test perimetre rectangle
 	@Test
-	public void perimetreTest(){
+	public void testPerimetre(){
 		assertEquals(18,rValide.perimetre());
 		assertEquals(18,rInvalide.perimetre());
 		assertEquals(0,rNull.perimetre());
@@ -62,7 +62,7 @@ public class RectanglesTest extends TestCase{
 	}
 	//test overlaping 
 	@Test
-	public void overlapingTest(){
+	public void testOverlaping(){
 		assertEquals(true,rValide.overlap(rInvalide));
 		RectangleT overTest= new RectangleT(6,10,6,9);
 		assertEquals(false,rValide.overlap(overTest));

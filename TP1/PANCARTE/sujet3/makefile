@@ -1,13 +1,13 @@
-all: UrlSplitter.class
-test: UrlSplitter.class Url_test.class TestLauncher.class
+all: StringSet.class
+test: StringSet.class StringSetTest.class TestLauncher.class
 
-UrlSplitter.class: UrlSplitter.java
-	javac -cp ".:./*" UrlSplitter.java
+StringSet.class: StringSet.java
+	javac -cp ".:./*" StringSet.java
 
-Url_test.class: Url_test.java
-	javac -cp ".:./*" Url_test.java
+StringSetTest.class: StringSetTest.java
+	javac -cp ".:./*" StringSetTest.java
 
-TestLauncher.class: TestLauncher.java Url_test.class
+TestLauncher.class: TestLauncher.java StringSetTest.class
 	javac -cp ".:./*" TestLauncher.java
 	echo "java -cp \".:./*\" TestLauncher" > run_test.sh
 
