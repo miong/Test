@@ -28,4 +28,8 @@ public class RectangleT {
 	public int aire(){
 		return (xmax-xmin)*(ymax-ymin);
 	}
+	
+	public int perimetre(){
+		return 2*((xmax-xmin)+(ymax-ymin));
+	}
 }
