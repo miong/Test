@@ -1,8 +1,7 @@
+import static org.junit.Assert.*;
+
 import org.junit.*;
-import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
-import org.junit.Assert.*;
+
 
 public class IntegerStackTest {
 
@@ -17,11 +16,18 @@ public class IntegerStackTest {
 		s=null;
 	}
 	
-//test ajout entier --> verifier taille + bon entier
 	@Test
 	public void testPush(){
 		s.push(2);
 		assertEquals(1,s.getSize());
 		assertEquals(2,s.getTab()[s.getSize()-1]);
+	}
+	@Test
+	public void testPop(){
+		s.push(3);
+		int size1=s.getSize();
+		int a=s.pop();
+		assertEquals(size1,s.getSize());
+		assertEquals(3,a);
 	}
 }
