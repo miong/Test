@@ -9,12 +9,14 @@ public class RectanglesTest {
 	RectangleT rValide;
 	RectangleT rInvalide;
 	RectangleT rNull;
+	RectangleT rPlat;
 	
 	@Before 
 	public void setUp(){
 		rValide=new RectangleT(0,4,0,5);
 		rInvalide= new RectangleT(4,0,0,5);
 		rNull=new RectangleT(0,0,0,0);
+		rPlat=new RectangleT(0,0,0,5);
 	}
 	
 	@After
@@ -22,6 +24,7 @@ public class RectanglesTest {
 		rValide=null;
 		rInvalide=null;
 		rNull=null;
+		rPlat=null;
 	}
 	
 	@Test
@@ -50,5 +53,12 @@ public class RectanglesTest {
 	}
 	
 	//test perimetre rectangle
+	@Test
+	public void perimetreTest(){
+		assertEquals(18,rValide.perimetre());
+		assertEquals(18,rInvalide.perimetre());
+		assertEquals(0,rNull.perimetre());
+		assertEquals(0,rPlat.perimetre());
+	}
 	//test overlaping 
 }
