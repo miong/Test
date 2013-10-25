@@ -18,7 +18,6 @@ public class StringSetTest {
 			s=null;
 	}
 	
-	//test Count
 	//Test union
 	//test intersection
 	//test clearing
@@ -43,7 +42,14 @@ public class StringSetTest {
 	@Test
 	public void removeTest(){
 		s.remove("bonjour");
+		s.remove("bonsoir");
 		assertEquals(false,s.contains("bonjour"));
 		assertEquals(0,s.getSize());
+	}
+	
+	//test Count
+	@Test
+	public void CountTest(){
+		assertEquals(1,s.Count());
 	}
 }	
