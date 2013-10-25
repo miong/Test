@@ -65,4 +65,10 @@ public class StringSet {
 		for(int i=0;i<ss.size;i++)
 			this.add(ss.tab[i]);
 	}
+	
+	public void intersection(StringSet ss){
+		for(int i=0;i<size;i++)
+			if(!ss.contains(tab[i]))
+				this.remove(tab[i]);
+	}
 }

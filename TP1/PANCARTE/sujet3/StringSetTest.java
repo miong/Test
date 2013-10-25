@@ -71,7 +71,7 @@ public class StringSetTest {
 	@Test
 	public void intersectionTest(){
 		s.intersection(s2);
-		assertEquals(true,s.contains("bonsoir"));
+		assertEquals(true,s.contains("bonjour"));
 		assertEquals(false,s.contains("hello"));
 		assertEquals(false,s.contains("ciao"));
 		assertEquals(false,s2.contains("hello"));
