@@ -50,8 +50,14 @@ public class StringSet {
 			if(tab[ind]==s)
 				break;
 		}
+		if(ind == size)
+			return;
 		for(int i=ind;i<size-1;i++)
 			tab[i]=tab[i+1];
 		size--;
+	}
+	
+	public int count(){
+		return size;
 	}
 }

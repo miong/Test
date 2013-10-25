@@ -50,6 +50,6 @@ public class StringSetTest {
 	//test Count
 	@Test
 	public void CountTest(){
-		assertEquals(1,s.Count());
+		assertEquals(1,s.count());
 	}
 }	
