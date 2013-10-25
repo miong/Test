@@ -24,11 +24,11 @@ public class LineTest {
 	@Test
 	public void LineIntersectionTest(){
 		Line lNormale=new Line(1,1,2,2);
-		Line lIntersecteNormale= new Line(0,0,4,4);
-		Line lIntersectePasNormale= new Line(-1,-1,0,0);
+		Line lIntersecteNormale= new Line(0,0,4,3);
+		Line lIntersectePasNormale= new Line(-2,-1,-1,0);
 		Line lConfondueAvecNormale= new Line (3,3,6,6);
 		assertEquals(true,lNormale.intersecte(lIntersecteNormale));
-		assertEquals(true,lNormale.intersecte(lIntersectePasNormale));
+		assertEquals(false,lNormale.intersecte(lIntersectePasNormale));
 		assertEquals(true,lNormale.intersecte(lConfondueAvecNormale));		
 	}
 	
