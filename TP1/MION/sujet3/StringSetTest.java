@@ -11,7 +11,9 @@ public class StringSetTest {
 	public void setUp(){
 		s= new StringSet();
 		s.add("bonjour");
+		s.add("hello");
 		s2= new StringSet();
+		s2.add("bonjour");
 		s2.add("bonsoir");
 		s2.add("ciao");
 	}
@@ -30,7 +32,7 @@ public class StringSetTest {
 	//test Add
 	@Test
 	public void addTest(){
-		assertEquals(1,s.getSize());
+		assertEquals(2,s.getSize());
 		assertEquals("bonjour",s.getTab()[0]);
 	}
 	
@@ -47,13 +49,13 @@ public class StringSetTest {
 		s.remove("bonjour");
 		s.remove("bonsoir");
 		assertEquals(false,s.contains("bonjour"));
-		assertEquals(0,s.getSize());
+		assertEquals(1,s.getSize());
 	}
 	
 	//test Count
 	@Test
 	public void CountTest(){
-		assertEquals(1,s.count());
+		assertEquals(2,s.count());
 	}
 	
 	//Test union
@@ -62,6 +64,16 @@ public class StringSetTest {
 		s.union(s2);
 		assertEquals(true,s.contains("bonsoir"));
 		assertEquals(true,s.contains("ciao"));
-		assertEquals(false,s2.contains("bonjour"));
+		assertEquals(false,s2.contains("hello"));
+	}
+	
+	//test intersection
+	@Test
+	public void intersectionTest(){
+		s.intersection(s2);
+		assertEquals(true,s.contains("bonsoir"));
+		assertEquals(false,s.contains("hello"));
+		assertEquals(false,s.contains("ciao"));
+		assertEquals(false,s2.contains("hello"));
 	}
 }	
