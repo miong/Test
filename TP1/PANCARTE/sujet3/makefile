@@ -1,15 +1,15 @@
-all: StringSet.class
-test: StringSetTest.class TestLauncher.class
+all: UrlSplitter.class
+test: UrlSplitter.class Url_test.class TestLauncher.class
 
-StringSet.class: StringSet.java
-	javac -cp .;./junits-4.11.jar;./hamcrest-core-1.3.jar StringSet.java
+UrlSplitter.class: UrlSplitter.java
+	javac -cp ".:./*" UrlSplitter.java
 
-StringSetTest.class: StringSetTest.java
-	javac -cp .;./junits-4.11.jar;./hamcrest-core-1.3.jar StringSetTest.java
+Url_test.class: Url_test.java
+	javac -cp ".:./*" Url_test.java
 
-TestLauncher.class: TestLauncher.java StringSetTest.class
-	javac -cp .;./junits-4.11.jar;./hamcrest-core-1.3.jar TestLauncher.java
-	echo "java -cp .;./junits-4.11.jar;./hamcrest-core-1.3.jar TestLauncher" > run_test.sh
+TestLauncher.class: TestLauncher.java Url_test.class
+	javac -cp ".:./*" TestLauncher.java
+	echo "java -cp \".:./*\" TestLauncher" > run_test.sh
 
 mrproper:
 	rm *.class *.sh

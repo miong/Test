@@ -1,10 +1,10 @@
 import static org.junit.Assert.*;
-
+import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class RectanglesTest {
+public class RectanglesTest extends TestCase{
 	
 	RectangleT rValide;
 	RectangleT rInvalide;

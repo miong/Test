@@ -1,9 +1,10 @@
 import static org.junit.Assert.*;
-
+import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-public class StringSetTest {
+
+public class StringSetTest extends TestCase{
 	
 	StringSet s,s2 ;
 	
