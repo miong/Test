@@ -75,4 +75,14 @@ public class StringSet {
 	public void clear(){
 		size=0;
 	}
+	
+	public String enumerate(){
+		String rep="";
+		for(int i=0;i<size;i++){
+			rep+=tab[i];
+			if(i<size-1)
+				rep+=" ";
+		}
+		return rep;
+	}	
 }
