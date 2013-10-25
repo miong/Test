@@ -1,5 +1,3 @@
-package PanMio;
-
 public class StringSet {
 	private int size;
 	private String[] tab;
@@ -20,6 +18,8 @@ public class StringSet {
 	
 	
 	public void add(String ajout){
+		if(this.contains(ajout))
+			return;
 		if (size==tab.length){
 			reSize();
 		}
@@ -42,5 +42,16 @@ public class StringSet {
 			}
 		}
 		return false;
+	}
+	
+	public void remove(String s){
+		int ind;
+		for(ind=0;ind<size;ind++){
+			if(tab[ind]==s)
+				break;
+		}
+		for(int i=ind;i<size-1;i++)
+			tab[i]=tab[i+1];
+		size--;
 	}
 }

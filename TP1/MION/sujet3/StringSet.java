@@ -43,4 +43,15 @@ public class StringSet {
 		}
 		return false;
 	}
+	
+	public void remove(String s){
+		int ind;
+		for(ind=0;ind<size;ind++){
+			if(tab[ind]==s)
+				break;
+		}
+		for(int i=ind;i<size-1;i++)
+			tab[i]=tab[i+1];
+		size--;
+	}
 }
