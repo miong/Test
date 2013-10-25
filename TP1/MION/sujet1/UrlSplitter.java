@@ -54,12 +54,6 @@ public class UrlSplitter {
 		path = (tmp.length()>0) ? tmp.substring(1,ind+1) : null;
 		tmp = tmp.substring(ind+1);
 		
-		System.out.println(url);
-		System.out.println(protocol);
-		System.out.println(domain);
-		System.out.println(path);
-		System.out.println(port);
-		System.out.println();
 		return true;
 	}
 	
