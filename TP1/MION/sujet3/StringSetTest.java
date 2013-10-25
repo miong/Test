@@ -23,11 +23,6 @@ public class StringSetTest {
 			s=null;
 	}
 	
-	
-	//test clearing
-	//test enumerating
-	
-	
 	//test Add
 	@Test
 	public void addTest(){
@@ -83,5 +78,12 @@ public class StringSetTest {
 		assertEquals(0,s.count());
 		assertEquals(false,s.contains("bonjour"));
 		assertEquals(false,s.contains("hello"));
+	}
+	
+	//test enumerating
+	@Test
+	public void enumerate(){
+		String rep = s.enumerate();
+		assertEquals("bonjour hello",rep);
 	}
 }	
