@@ -23,6 +23,9 @@ public class RectangleT {
 			ymax=c;
 		}
 		
-		
+	}
+	
+	public int aire(){
+		return (xmax-xmin)*(ymax-ymin);
 	}
 }
