@@ -1,5 +1,3 @@
-package LineTest;
-
 public class Line {
 	
 	static double precision=0.0001;

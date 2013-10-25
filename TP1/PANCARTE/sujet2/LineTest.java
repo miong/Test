@@ -1,12 +1,10 @@
-package LineTest;
-
 import static org.junit.Assert.*;
-
+import junit.frameworks.TestCase
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class LineTest {
+public class LineTest extends TestCase {
 	
 	
 	//test constructeur

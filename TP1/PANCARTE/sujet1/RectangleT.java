@@ -1,4 +1,3 @@
-
 public class RectangleT {
 	int xmin;
 	int xmax;
