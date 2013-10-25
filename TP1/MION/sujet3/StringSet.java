@@ -60,4 +60,9 @@ public class StringSet {
 	public int count(){
 		return size;
 	}
+	
+	public void union(StringSet ss){
+		for(int i=0;i<ss.size;i++)
+			this.add(ss.tab[i]);
+	}
 }
