@@ -5,12 +5,15 @@ import org.junit.Before;
 import org.junit.Test;
 public class StringSetTest {
 	
-	StringSet s ;
+	StringSet s,s2 ;
 	
 	@Before
 	public void setUp(){
 		s= new StringSet();
 		s.add("bonjour");
+		s2= new StringSet();
+		s2.add("bonsoir");
+		s2.add("ciao");
 	}
 	
 	@After
@@ -18,7 +21,7 @@ public class StringSetTest {
 			s=null;
 	}
 	
-	//Test union
+	
 	//test intersection
 	//test clearing
 	//test enumerating
@@ -51,5 +54,14 @@ public class StringSetTest {
 	@Test
 	public void CountTest(){
 		assertEquals(1,s.count());
+	}
+	
+	//Test union
+	@Test
+	public void unionTest(){
+		s.union(s2);
+		assertEquals(true,s.contains("bonsoir"));
+		assertEquals(true,s.contains("ciao"));
+		assertEquals(false,s2.contains("bonjour"));
 	}
 }	
