@@ -24,7 +24,6 @@ public class StringSetTest {
 	}
 	
 	
-	//test intersection
 	//test clearing
 	//test enumerating
 	
@@ -75,5 +74,14 @@ public class StringSetTest {
 		assertEquals(false,s.contains("hello"));
 		assertEquals(false,s.contains("ciao"));
 		assertEquals(false,s2.contains("hello"));
+	}
+	
+	//test clearing
+	@Test
+	public void clearTest(){
+		s.clear();
+		assertEquals(0,s.count());
+		assertEquals(false,s.contains("bonjour"));
+		assertEquals(false,s.contains("hello"));
 	}
 }	
