@@ -27,7 +27,7 @@ public class IntegerStackTest {
 		s.push(3);
 		int size1=s.getSize();
 		int a=s.pop();
-		assertEquals(size1,s.getSize());
+		assertEquals(size1,s.getSize()+1);
 		assertEquals(3,a);
 	}
 }

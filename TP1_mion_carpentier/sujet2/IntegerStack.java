@@ -30,4 +30,13 @@ public class IntegerStack {
 		}
 		tab=tmp;
 	}
+	public int pop(){
+		int tmp = 0;
+		if (size>0){
+			tmp=tab[size-1];
+			tab[size-1]=0;
+			size--;
+		}
+		return tmp;
+	}
 }
