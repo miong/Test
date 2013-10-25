@@ -1,6 +1,8 @@
 package LineTest;
 
 public class Line {
+	
+	static double precision=0.0001;
 	int x1;
 	int x2;
 	int y1;
@@ -13,9 +15,7 @@ public class Line {
 		y2=d;
 	}
 	
-	
-	public boolean intersecte(Line l){
-		double precision= 0.000001;
+	public boolean parrallele(Line l){
 		
 		int abscisseVecteurX1= this.x2-this.x1;
 		int ordonneeVecteurY1= this.y2-this.y1;
@@ -27,20 +27,22 @@ public class Line {
 		double rapportVecteurY=(double)ordonneeVecteurY2/(double)ordonneeVecteurY1;
 		
 		if(  ((rapportVecteurX-rapportVecteurY)<precision) && ((rapportVecteurX-rapportVecteurY)>-precision)  ){
+			return true;
+		}
+		return false;
+	}
+	
+	
+	public boolean intersecte(Line l){
+		if( this.parrallele(l) ){
 			//les vecteurs directeurs des droites sont paralleles
-			int abscisseVecteurX3= this.x2-l.x1;
-			int ordonneeVecteurY3= this.y2-l.y1;
-			double rapportVecteurY3=(double)ordonneeVecteurY3/(double)ordonneeVecteurY1;
-			double rapportVecteurX3=(double)abscisseVecteurX3/(double)abscisseVecteurX1;
+			Line lineDefinieParUnPointDeChaqueDroites = new Line(this.x1,this.y1,l.x1,l.y1);
 			
-			if(  ((rapportVecteurX3-rapportVecteurY3)<precision) && ((rapportVecteurX3-rapportVecteurY3)>-precision)  ){
+			if( this.parrallele(lineDefinieParUnPointDeChaqueDroites)){
 				return true;
 			}
-			
 			return false;
 		}
-		
 		return true;
-		
 	}
 }
