@@ -71,4 +71,8 @@ public class StringSet {
 			if(!ss.contains(tab[i]))
 				this.remove(tab[i]);
 	}
+	
+	public void clear(){
+		size=0;
+	}
 }
