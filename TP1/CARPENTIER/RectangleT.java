@@ -32,4 +32,26 @@ public class RectangleT {
 	public int perimetre(){
 		return 2*((xmax-xmin)+(ymax-ymin));
 	}
+	
+	public boolean overlap(RectangleT r){
+		if((r.xmin<= this.xmax )&& (r.xmin >=this.xmin) && (r.ymin <= this.ymax) && (r.ymin>= this.ymin)){
+			return true;
+		}
+		
+		if((r.xmax<= this.xmax )&& (r.xmax >=this.xmin) && (r.ymax <= this.ymax) && (r.ymax>= this.ymin)){
+			return true;
+		}
+		
+		
+		if((r.xmax<= this.xmax )&& (r.xmax >=this.xmin) && (r.ymin <= this.ymax) && (r.ymin>= this.ymin)){
+			return true;
+		}
+		
+		
+		if((r.xmin<= this.xmax )&& (r.xmin >=this.xmin) && (r.ymax <= this.ymax) && (r.ymax>= this.ymin)){
+			return true;
+		}
+		
+		return false;
+	}
 }
