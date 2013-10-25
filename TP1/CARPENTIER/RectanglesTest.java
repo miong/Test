@@ -58,7 +58,13 @@ public class RectanglesTest {
 		assertEquals(18,rValide.perimetre());
 		assertEquals(18,rInvalide.perimetre());
 		assertEquals(0,rNull.perimetre());
-		assertEquals(0,rPlat.perimetre());
+		assertEquals(10,rPlat.perimetre());
 	}
 	//test overlaping 
+	@Test
+	public void overlapingTest(){
+		assertEquals(true,rValide.overlap(rInvalide));
+		RectangleT overTest= new RectangleT(6,10,6,9);
+		assertEquals(false,rValide.overlap(overTest));
+	}
 }
