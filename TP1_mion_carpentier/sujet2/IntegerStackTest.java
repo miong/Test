@@ -30,4 +30,11 @@ public class IntegerStackTest {
 		assertEquals(size1,s.getSize()+1);
 		assertEquals(3,a);
 	}
+	@Test
+	public void testCount(){
+		for (int i=0;i<15;i++){
+			s.push(i);
+			assertEquals(s.count(),i);
+		}
+	}
 }
