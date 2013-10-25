@@ -18,7 +18,7 @@ public class StringSetTest {
 	public void tearDown(){
 			s=null;
 	}
-	//test Remove
+	
 	//test Count
 	//Test union
 	//test intersection
@@ -40,4 +40,11 @@ public class StringSetTest {
 		assertEquals(false,s.contains("bonsoir"));		
 	}
 	
+	//test Remove
+	@Test
+	public void removeTest(){
+		s.remove("bonjour");
+		assertEquals(false,s.contains("bonjour"));
+		assertEquals(0,s.getSize());
+	}
 }	
