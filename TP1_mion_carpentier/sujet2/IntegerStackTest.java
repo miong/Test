@@ -22,6 +22,6 @@ public class IntegerStackTest {
 	public void testPush(){
 		s.push(2);
 		assertEquals(1,s.getSize());
-		assertEquals(2,s.tab[s.getSize()-1]);
+		assertEquals(2,s.getTab()[s.getSize()-1]);
 	}
 }
