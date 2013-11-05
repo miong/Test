@@ -1,0 +1,37 @@
+0000000000000000000000000000000000000000 a6ed6200dc6b43e36c564698b19d87249d1b2e66 Mion Giovanni <mion.ggb@gmail.com> 1381858979 +0200	clone: from https://github.com/miong/Test.git
+a6ed6200dc6b43e36c564698b19d87249d1b2e66 62e4c622e1d03a8202dd2e9b733355ff65669375 Mion Giovanni <mion.ggb@gmail.com> 1382710777 +0200	checkout: moving from master to 62e4c622e1d03a8202dd2e9b733355ff65669375^0
+62e4c622e1d03a8202dd2e9b733355ff65669375 62e4c622e1d03a8202dd2e9b733355ff65669375 Mion Giovanni <mion.ggb@gmail.com> 1382710779 +0200	rebase finished: returning to refs/heads/master
+62e4c622e1d03a8202dd2e9b733355ff65669375 e0b7feaaee5c0cabe3dda5903ad8a23b3f4ef0ee Mion Giovanni <mion.ggb@gmail.com> 1382720050 +0200	pull --progress --prune: Fast-forward
+e0b7feaaee5c0cabe3dda5903ad8a23b3f4ef0ee 58492e7bb3eb8830c79e8214637c1cd7d536ec7a Mion Giovanni <mion.ggb@gmail.com> 1382720291 +0200	pull origin master: Fast-forward
+58492e7bb3eb8830c79e8214637c1cd7d536ec7a 3278cde169eb935cf6a9b14bbaf92d48344aa209 Mion Giovanni <mion.ggb@gmail.com> 1382720452 +0200	commit: restructuration MION
+3278cde169eb935cf6a9b14bbaf92d48344aa209 08485f885b9fef5613266482751e1d7f5ef9e492 Mion Giovanni <mion.ggb@gmail.com> 1382720925 +0200	commit: automatisation lancement test sujet 2
+08485f885b9fef5613266482751e1d7f5ef9e492 f728e2ae45832a36113a2bfd3f9cf36924899017 Mion Giovanni <mion.ggb@gmail.com> 1382721030 +0200	commit: automatisation
+f728e2ae45832a36113a2bfd3f9cf36924899017 f2905fb34448f76d839072318e7b644a9d4533d9 Mion Giovanni <mion.ggb@gmail.com> 1382721042 +0200	checkout: moving from master to f2905fb34448f76d839072318e7b644a9d4533d9^0
+f2905fb34448f76d839072318e7b644a9d4533d9 f688c78547eb7d9c0da87d7f0cd3b0cc82ee876a Mion Giovanni <mion.ggb@gmail.com> 1382721050 +0200	pull --progress --rebase --prune: automatisation
+f688c78547eb7d9c0da87d7f0cd3b0cc82ee876a f688c78547eb7d9c0da87d7f0cd3b0cc82ee876a Mion Giovanni <mion.ggb@gmail.com> 1382721052 +0200	rebase finished: returning to refs/heads/master
+f688c78547eb7d9c0da87d7f0cd3b0cc82ee876a 1bd74090bb05dd92e881d1c5b195ca47e9397301 Mion Giovanni <mion.ggb@gmail.com> 1382721066 +0200	pull --progress --prune: Merge made by the 'recursive' strategy.
+1bd74090bb05dd92e881d1c5b195ca47e9397301 a2ae6f909f80cb34af88e4c111277e64d9dae136 Mion Giovanni <mion.ggb@gmail.com> 1382721828 +0200	checkout: moving from master to a2ae6f909f80cb34af88e4c111277e64d9dae136^0
+a2ae6f909f80cb34af88e4c111277e64d9dae136 a2ae6f909f80cb34af88e4c111277e64d9dae136 Mion Giovanni <mion.ggb@gmail.com> 1382721830 +0200	rebase finished: returning to refs/heads/master
+a2ae6f909f80cb34af88e4c111277e64d9dae136 97372928fde044c0bb2c498da3f5471d5d582535 Mion Giovanni <mion.ggb@gmail.com> 1382728024 +0200	checkout: moving from master to 97372928fde044c0bb2c498da3f5471d5d582535^0
+97372928fde044c0bb2c498da3f5471d5d582535 97372928fde044c0bb2c498da3f5471d5d582535 Mion Giovanni <mion.ggb@gmail.com> 1382728026 +0200	rebase finished: returning to refs/heads/master
+97372928fde044c0bb2c498da3f5471d5d582535 fe22804175cf62a87b23ffa4ecc5c76e37e4f1d0 Mion Giovanni <mion.ggb@gmail.com> 1382728375 +0200	commit: Refactor sujet3 add
+fe22804175cf62a87b23ffa4ecc5c76e37e4f1d0 b02e70e6198ec6a46058aecdc48f69abed5d51a1 Mion Giovanni <mion.ggb@gmail.com> 1382728618 +0200	commit: sujet 3 Test successfull 3
+b02e70e6198ec6a46058aecdc48f69abed5d51a1 d2ace427910887c2cc31089773c31e4b6113bee9 Mion Giovanni <mion.ggb@gmail.com> 1382728813 +0200	commit: sujet 3 TestFail 4
+d2ace427910887c2cc31089773c31e4b6113bee9 a96b6ffd001ee7bef916052097d1c5f5b1f73c5a Mion Giovanni <mion.ggb@gmail.com> 1382728956 +0200	commit: sujet 3 TestSuccess 4
+a96b6ffd001ee7bef916052097d1c5f5b1f73c5a e5054828d6ab39a79f388c573e973d4d4a5d9b7f Mion Giovanni <mion.ggb@gmail.com> 1382729165 +0200	commit: sujet 3 TestFail 5
+e5054828d6ab39a79f388c573e973d4d4a5d9b7f d95a23ecc51350365ff9b51342af10c63eedf6a2 Mion Giovanni <mion.ggb@gmail.com> 1382729280 +0200	commit: sujet 3 TestSuccess 5
+d95a23ecc51350365ff9b51342af10c63eedf6a2 4e16dbcb27c807b8bd88b7205a63b004ad6a6989 Mion Giovanni <mion.ggb@gmail.com> 1382729622 +0200	commit: sujet 3 TestFail 6
+4e16dbcb27c807b8bd88b7205a63b004ad6a6989 c09ddb79cd416d5f748cbdba3cc24584d5c35578 Mion Giovanni <mion.ggb@gmail.com> 1382729987 +0200	commit: sujet 3 TestSuccess 6
+c09ddb79cd416d5f748cbdba3cc24584d5c35578 ed7f968dcbd2281d35b54ed91c1a6463d5e4e1d0 Mion Giovanni <mion.ggb@gmail.com> 1382730150 +0200	commit: sujet 3 TestFail 7
+ed7f968dcbd2281d35b54ed91c1a6463d5e4e1d0 2644c0b4cf25e0e595e32c75a75073d76da26d4f Mion Giovanni <mion.ggb@gmail.com> 1382730211 +0200	commit: sujet 3 TestSuccess 7
+2644c0b4cf25e0e595e32c75a75073d76da26d4f 57b19a07660fe5ef5fd7ff9d91b00fb107f7e30e Mion Giovanni <mion.ggb@gmail.com> 1382730341 +0200	commit: sujet 3 TestFail 8
+57b19a07660fe5ef5fd7ff9d91b00fb107f7e30e 91a3ce070963cb4b3594b2214ff3a46139de13da Mion Giovanni <mion.ggb@gmail.com> 1382730461 +0200	commit: sujet 3 TestSucess 8
+91a3ce070963cb4b3594b2214ff3a46139de13da 50372148f29af86810297871e028811d6256b067 Mion Giovanni <mion.ggb@gmail.com> 1382731201 +0200	commit: automatisation compilation & test phase 1
+50372148f29af86810297871e028811d6256b067 5f6c639e58a6f6e2987ccc3dc1a774e7523d5e4c Mion Giovanni <mion.ggb@gmail.com> 1382733821 +0200	commit: Makefile pour compilation
+5f6c639e58a6f6e2987ccc3dc1a774e7523d5e4c 878961b4ca5686240bd55ba75f7e8bc168aa2aef Mion Giovanni <mion.ggb@gmail.com> 1382733835 +0200	checkout: moving from master to 878961b4ca5686240bd55ba75f7e8bc168aa2aef^0
+878961b4ca5686240bd55ba75f7e8bc168aa2aef 8a53e2ee62ff2791402d7d5b7a9cd57268520738 Mion Giovanni <mion.ggb@gmail.com> 1382733842 +0200	pull --progress --rebase --prune: Makefile pour compilation
+8a53e2ee62ff2791402d7d5b7a9cd57268520738 8a53e2ee62ff2791402d7d5b7a9cd57268520738 Mion Giovanni <mion.ggb@gmail.com> 1382733844 +0200	rebase finished: returning to refs/heads/master
+8a53e2ee62ff2791402d7d5b7a9cd57268520738 614c6107cdf58671ebeeabc321172a4b9f2d659d Mion Giovanni <mion.ggb@gmail.com> 1382734280 +0200	pull --progress --prune: Fast-forward
+614c6107cdf58671ebeeabc321172a4b9f2d659d 53e0438bbd7df78aca3a8fa46a8c26d659c08ae0 Mion Giovanni <mion.ggb@gmail.com> 1382734683 +0200	pull --progress --prune: Fast-forward
+53e0438bbd7df78aca3a8fa46a8c26d659c08ae0 eaa575d47915fa63ae55637ce7bfa21806a87d0c Mion Giovanni <mion.ggb@gmail.com> 1382734789 +0200	commit: mise en place de l'automatisiation ! makefile a modif
+eaa575d47915fa63ae55637ce7bfa21806a87d0c db5808903f38f087d974f594c18db13e0ea96e74 Mion Giovanni <mion.ggb@gmail.com> 1382737382 +0200	commit: Test automatique & makefile

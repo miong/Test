@@ -1,0 +1,18 @@
+a6ed6200dc6b43e36c564698b19d87249d1b2e66 62e4c622e1d03a8202dd2e9b733355ff65669375 unknown <Bubul@win-bubul.(none)> 1382710767 +0200	fetch origin +refs/heads/*:refs/remotes/origin/* +refs/pull/*/head:refs/remotes/origin/pr/*: fast-forward
+62e4c622e1d03a8202dd2e9b733355ff65669375 e0b7feaaee5c0cabe3dda5903ad8a23b3f4ef0ee unknown <Bubul@win-bubul.(none)> 1382720031 +0200	fetch origin +refs/heads/*:refs/remotes/origin/* +refs/pull/*/head:refs/remotes/origin/pr/*: fast-forward
+e0b7feaaee5c0cabe3dda5903ad8a23b3f4ef0ee 58492e7bb3eb8830c79e8214637c1cd7d536ec7a unknown <Bubul@win-bubul.(none)> 1382720431 +0200	fetch origin +refs/heads/*:refs/remotes/origin/* +refs/pull/*/head:refs/remotes/origin/pr/*: fast-forward
+58492e7bb3eb8830c79e8214637c1cd7d536ec7a 3278cde169eb935cf6a9b14bbaf92d48344aa209 Mion Giovanni <mion.ggb@gmail.com> 1382720477 +0200	update by push
+3278cde169eb935cf6a9b14bbaf92d48344aa209 08485f885b9fef5613266482751e1d7f5ef9e492 Mion Giovanni <mion.ggb@gmail.com> 1382720946 +0200	update by push
+08485f885b9fef5613266482751e1d7f5ef9e492 f2905fb34448f76d839072318e7b644a9d4533d9 unknown <Bubul@win-bubul.(none)> 1382721037 +0200	pull --progress --rebase --prune: fast-forward
+f2905fb34448f76d839072318e7b644a9d4533d9 0dbb05ca71defc95223016036a013b16b53474e1 unknown <Bubul@win-bubul.(none)> 1382721065 +0200	pull --progress --prune: fast-forward
+0dbb05ca71defc95223016036a013b16b53474e1 1bd74090bb05dd92e881d1c5b195ca47e9397301 Mion Giovanni <mion.ggb@gmail.com> 1382721075 +0200	update by push
+1bd74090bb05dd92e881d1c5b195ca47e9397301 a2ae6f909f80cb34af88e4c111277e64d9dae136 unknown <Bubul@win-bubul.(none)> 1382721824 +0200	pull --progress --rebase --prune: fast-forward
+a2ae6f909f80cb34af88e4c111277e64d9dae136 97372928fde044c0bb2c498da3f5471d5d582535 unknown <Bubul@win-bubul.(none)> 1382727987 +0200	fetch origin +refs/heads/*:refs/remotes/origin/* +refs/pull/*/head:refs/remotes/origin/pr/*: fast-forward
+97372928fde044c0bb2c498da3f5471d5d582535 91a3ce070963cb4b3594b2214ff3a46139de13da Mion Giovanni <mion.ggb@gmail.com> 1382730484 +0200	update by push
+91a3ce070963cb4b3594b2214ff3a46139de13da 50372148f29af86810297871e028811d6256b067 Mion Giovanni <mion.ggb@gmail.com> 1382731225 +0200	update by push
+50372148f29af86810297871e028811d6256b067 878961b4ca5686240bd55ba75f7e8bc168aa2aef unknown <Bubul@win-bubul.(none)> 1382733811 +0200	fetch origin +refs/heads/*:refs/remotes/origin/* +refs/pull/*/head:refs/remotes/origin/pr/*: fast-forward
+878961b4ca5686240bd55ba75f7e8bc168aa2aef 8a53e2ee62ff2791402d7d5b7a9cd57268520738 Mion Giovanni <mion.ggb@gmail.com> 1382733855 +0200	update by push
+8a53e2ee62ff2791402d7d5b7a9cd57268520738 614c6107cdf58671ebeeabc321172a4b9f2d659d unknown <Bubul@win-bubul.(none)> 1382734269 +0200	fetch origin +refs/heads/*:refs/remotes/origin/* +refs/pull/*/head:refs/remotes/origin/pr/*: fast-forward
+614c6107cdf58671ebeeabc321172a4b9f2d659d 53e0438bbd7df78aca3a8fa46a8c26d659c08ae0 unknown <Bubul@win-bubul.(none)> 1382734645 +0200	fetch origin +refs/heads/*:refs/remotes/origin/* +refs/pull/*/head:refs/remotes/origin/pr/*: fast-forward
+53e0438bbd7df78aca3a8fa46a8c26d659c08ae0 eaa575d47915fa63ae55637ce7bfa21806a87d0c Mion Giovanni <mion.ggb@gmail.com> 1382734813 +0200	update by push
+eaa575d47915fa63ae55637ce7bfa21806a87d0c db5808903f38f087d974f594c18db13e0ea96e74 Mion Giovanni <mion.ggb@gmail.com> 1382737403 +0200	update by push
