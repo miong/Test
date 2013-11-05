@@ -6,8 +6,8 @@ public class VersionManager implements VersionManagerInterface {
 	
 	@Override
 	public Memento saveInMemento() {
-		// TODO Auto-generated method stub
-		return null;
+		Memento rep = new Memento(state);
+		return rep;
 	}
 
 	@Override
@@ -20,8 +20,8 @@ public class VersionManager implements VersionManagerInterface {
 		return state;
 	}
 
-	public void setState(Position state) {
-		this.state = state;
+	public void setState(Position s) {
+		state = s;
 	}
 	
 	

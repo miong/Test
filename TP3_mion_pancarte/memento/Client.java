@@ -4,19 +4,19 @@ public class Client {
 
 	private VersionManagerInterface manager;
 	private GuardianInterface guardian;
-	private int x;
-	private int y;
+	Position p;
 	
 	
 	public Client(GuardianInterface g,VersionManagerInterface v,int x,int y){
 		manager=v;
 		guardian=g;
-		this.x = x;
-		this.y = y;
+		p = new Position(x,y);
 	}
 	
 	public void save(){
-		
+		manager.setState(p);
+		Memento m = manager.saveInMemento();
+		guardian.addMemento(m);
 	}
 	
 	
