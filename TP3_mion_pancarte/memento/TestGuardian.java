@@ -1,6 +1,5 @@
 package memento;
 
-import static org.junit.Assert.* ;
 import junit.framework.TestCase;
 
 import org.junit.After;

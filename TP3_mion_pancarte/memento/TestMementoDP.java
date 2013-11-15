@@ -1,6 +1,5 @@
 package memento;
 
-import static org.junit.Assert.* ;
 import junit.framework.TestCase;
 
 import org.junit.Rule ;
@@ -39,7 +38,8 @@ public class TestMementoDP extends TestCase{
 	public void testSave(){
 		
 		context.checking(new Expectations() {{
-			oneOf (mockingV).saveInMemento(); inSequence(save);
+			oneOf (mockingV).setState(new Position(10,12));
+			oneOf (mockingV).saveInMemento(); inSequence(save);will(returnValue(testMemento)); 
 			oneOf (mockingG).addMemento(testMemento); inSequence(save);
 		}});
 		
