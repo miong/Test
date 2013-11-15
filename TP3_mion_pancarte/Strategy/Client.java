@@ -18,13 +18,13 @@ public class Client {
 		this.c = c;
 	}
 	
-	public void goToTheAirport(){
+	public String goToTheAirport(){
 		try {
 			strat = fac.build(c);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		strat.goToAirport();
+		return strat.goToAirport();
 	}
 
 }
