@@ -8,4 +8,5 @@ public interface GuardianInterface {
 	// retrieve the Memento with the id:ID from the guardian
 	public Memento getMemento(int ID);
 
+	public int getNumberOfSavedObject();
 }

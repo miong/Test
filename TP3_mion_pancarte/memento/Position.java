@@ -10,7 +10,10 @@ public class Position {
 		this.y=y;
 	}
 	
-	public boolean equals(Position p2){
+	public boolean equals(Object o){
+		if(!(o instanceof Position))
+			return false;
+		Position p2 = (Position) o;
 		return x==p2.x && y==p2.y;
 	}
 

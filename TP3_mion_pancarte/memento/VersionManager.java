@@ -12,8 +12,7 @@ public class VersionManager implements VersionManagerInterface {
 
 	@Override
 	public void restoreFromMemento(Memento m) {
-		// TODO Auto-generated method stub
-		
+		state = m.getPosition();
 	}
 
 	public Position getState() {

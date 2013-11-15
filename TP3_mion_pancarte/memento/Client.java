@@ -1,6 +1,6 @@
 package memento;
 
-public class Client {
+public class Client implements ClientInterface{
 
 	private VersionManagerInterface manager;
 	private GuardianInterface guardian;
@@ -13,10 +13,16 @@ public class Client {
 		p = new Position(x,y);
 	}
 	
-	public void save(){
+	public int save(){
 		manager.setState(p);
 		Memento m = manager.saveInMemento();
-		guardian.addMemento(m);
+		return guardian.addMemento(m);
+	}
+	
+	public void restore(int ID){
+		Memento m = guardian.getMemento(ID);
+		manager.restoreFromMemento(m);
+		p = manager.getState();
 	}
 	
 	

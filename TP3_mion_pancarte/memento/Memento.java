@@ -11,5 +11,12 @@ public class Memento {
 	public Position getPosition(){
 		return p;
 	}
+	
+	public boolean equals(Object o){
+		if(!(o instanceof Memento))
+			return false;
+		Memento m = (Memento) o;
+		return p.equals(m.p);
+	}
 
 }

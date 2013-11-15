@@ -1,17 +1,30 @@
 package memento;
 
-public class Guardian implements GuardianInterface{
+import java.util.TreeMap;
 
+
+
+public class Guardian implements GuardianInterface{
+	
+	private int nextId = 0;
+	private TreeMap<Integer,Memento> saved = new TreeMap<Integer,Memento>();
+	
 	@Override
 	public int addMemento(Memento m) {
-		// TODO Auto-generated method stub
-		return 0;
+		int id = nextId;
+		nextId++;
+		saved.put(id,m);
+		return id;
 	}
 
 	@Override
 	public Memento getMemento(int ID) {
-		// TODO Auto-generated method stub
-		return null;
+		Memento m = saved.get(ID);
+		return m;
+	}
+	
+	public int getNumberOfSavedObject(){
+		return saved.size();
 	}
 
 }
