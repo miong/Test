@@ -1,71 +1,98 @@
-/*********************************************************
- * methTestTP3
- * smtp
- * Server.java	
- * (c)methTestTP3 on 16 nov. 2013 01:12:30
- * By ken
- * Update 16 nov. 2013 01:12:30
-*********************************************************/
 package smtp;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
 import java.net.Socket;
 
-/**
- * @author ken
- *
- */
-public class Server implements ServerInterface{
+public class Server extends Thread implements ServerInterface{
 
-	/* (non-Javadoc)
-	 * @see smtp.ServerInterface#start()
-	 */
-	@Override
-	public boolean start() {
-		// TODO Auto-generated method stub
-		return false;
+	ServerSocket server;
+	Socket client;
+	BufferedInputStream readableStream;
+    BufferedOutputStream writableStream;
+    boolean running;
+    
+    public Server(int port){
+    	try{
+    		server = new ServerSocket(port);
+    		client = null;
+        	readableStream = null;
+            writableStream = null;
+            running = false;
+    	}catch (Exception e){
+    		e.printStackTrace();
+    	}
+    	
+    }
+    
+    
+    public void run(){
+    	running = true;
+    	while(running){
+    		try{
+    			client = waitConnexion();
+    			readableStream = new BufferedInputStream(client.getInputStream());
+    			writableStream = new BufferedOutputStream(client.getOutputStream());
+    			SMTPTreatment();
+    			client.close();
+    			client = null;
+    			readableStream = null;
+    			writableStream = null;
+    		}catch (Exception e){
+    			e.printStackTrace();
+    		}
+    	}
 	}
-
-	/* (non-Javadoc)
-	 * @see smtp.ServerInterface#stop()
-	 */
-	@Override
-	public void stop() {
-		// TODO Auto-generated method stub
-	}
-
-	/* (non-Javadoc)
-	 * @see smtp.ServerInterface#waitConnexion()
-	 */
-	@Override
-	public Socket waitConnexion() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	/* (non-Javadoc)
-	 * @see smtp.ServerInterface#SMTPTreatment()
-	 */
-	@Override
-	public void SMTPTreatment() {
-		// TODO Auto-generated method stub
+    
+    public void SMTPTreatment() {
+		
 		
 	}
+    
+    public void tryToStop(){
+    	running = false;
+    }
 
-	/* (non-Javadoc)
-	 * @see smtp.ServerInterface#read()
-	 */
-	@Override
-	public String read() {
-		// TODO Auto-generated method stub
-		return null;
+	public Socket waitConnexion() {
+		try {
+			return server.accept();
+		} catch (IOException e) {
+			return null;
+		}
 	}
 
-	/* (non-Javadoc)
-	 * @see smtp.ServerInterface#write()
-	 */
-	@Override
-	public void write() {
-		// TODO Auto-generated method stub
+	
+	public String read() {
+		String response = "";
+		int readed=0;
+		if(client != null){
+			do{
+				try {
+					readed = readableStream.read();
+				} catch (IOException e) {}
+				if(readed >0 )
+					response += (char) readed;
+			}while(readed != -1);
+		}
+		return response;
+	}
+	
+
+
+	public boolean write(String s) {
+		if(client != null){
+			try {
+				writableStream.write(s.getBytes());
+				writableStream.flush();
+				return true;
+			} catch (IOException e) {
+				return false;
+			}
+			
+		}
+		return false;
 		
 	}
 

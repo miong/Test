@@ -31,7 +31,7 @@ public class testServer extends TestCase{
 	
 	@Before
 	public void setUp(){
-		s = new Server();
+		s = new Server(8081);
 	}
 	
 	@After

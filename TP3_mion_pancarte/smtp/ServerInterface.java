@@ -4,9 +4,7 @@ import java.net.Socket;
 
 public interface ServerInterface {
 	
-	public boolean start();
-	
-	public void stop();
+	public void start();
 	
 	public Socket waitConnexion();
 	
@@ -14,6 +12,6 @@ public interface ServerInterface {
 	
 	public String read();
 	
-	public void write();
+	public boolean write(String s);
 
 }

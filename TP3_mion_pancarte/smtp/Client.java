@@ -1,34 +1,57 @@
 
 package smtp;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+
 
 public class Client implements ClientInterface{
 
-	/* (non-Javadoc)
-	 * @see smtp.ClientInterface#connectTo(java.lang.String, int)
-	 */
-	@Override
+    Socket toServer = null;
+    BufferedInputStream readableStream = null;
+    BufferedOutputStream writableStream = null;
+	
 	public boolean connectTo(String hostname, int port) {
-		// TODO Auto-generated method stub
+		try{
+			toServer = new Socket(hostname,port);
+			readableStream = new BufferedInputStream(toServer.getInputStream());
+			writableStream = new BufferedOutputStream(toServer.getOutputStream());
+			return toServer.isConnected();
+		}catch(Exception e){
+			toServer = null;
+			return false;
+		}
+	}
+
+	public boolean sendMessage(String s) {
+		if(toServer != null){
+			try {
+				writableStream.write(s.getBytes());
+				writableStream.flush();
+				return true;
+			} catch (IOException e) {
+				return false;
+			}
+			
+		}
 		return false;
 	}
 
-	/* (non-Javadoc)
-	 * @see smtp.ClientInterface#sendMessage(java.lang.String)
-	 */
-	@Override
-	public void sendMessage(String s) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	/* (non-Javadoc)
-	 * @see smtp.ClientInterface#readResponce()
-	 */
-	@Override
-	public String readResponce() {
-		// TODO Auto-generated method stub
-		return null;
+	public String readResponse() {
+		String response = "";
+		int readed=0;
+		if(toServer != null){
+			do{
+				try {
+					readed = readableStream.read();
+				} catch (IOException e) {}
+				if(readed >0 )
+					response += (char) readed;
+			}while(readed != -1);
+		}
+		return response;
 	}
 
 }
