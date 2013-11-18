@@ -13,4 +13,7 @@ Topics :
 
 Instructions to compile and run tests:
 
+compile : javac -cp ".:./*" *.java
+
+run test:
 
