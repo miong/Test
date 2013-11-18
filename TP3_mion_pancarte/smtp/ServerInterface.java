@@ -1,4 +1,4 @@
-package smtp;
+
 
 import java.net.Socket;
 
@@ -6,7 +6,7 @@ public interface ServerInterface {
 	
 	public void start();
 	
-	public Socket waitConnexion();
+	public void waitConnexion();
 	
 	public void SMTPTreatment();
 	

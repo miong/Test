@@ -1,5 +1,3 @@
-package Strategy;
-
 public class TransportFactory {
 
 

@@ -1,4 +1,3 @@
-package Strategy;
 
 import junit.framework.TestCase;
 

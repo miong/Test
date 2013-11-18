@@ -1,4 +1,3 @@
-package Strategy;
 
 public class ByCab implements Strategy{
 

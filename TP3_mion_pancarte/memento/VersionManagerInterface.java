@@ -1,5 +1,3 @@
-package memento;
-
 public interface VersionManagerInterface {
 
 	// save the current state into a Memento

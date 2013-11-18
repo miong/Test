@@ -15,5 +15,5 @@ Instructions to compile and run tests:
 
 compile : javac -cp ".:./*" *.java
 
-run test:
+run test: java -cp ".:./*" TestLauncher
 

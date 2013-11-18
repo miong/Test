@@ -1,5 +1,3 @@
-package memento;
-
 public class VersionManager implements VersionManagerInterface {
 
 	private Position state;
